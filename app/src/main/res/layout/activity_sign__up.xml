@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Sign_Up">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+    <TextView
+        android:id="@+id/tv_signup_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_24ssp"
+        android:text="Easy sign up!" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#606060"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="normal"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Country" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/group" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="normal"
+                android:text="Kenya" />
+        </LinearLayout>
+
+        <TextView
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#606060"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="normal"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Your full name" />
+
+        <EditText
+            android:id="@+id/etfirst_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name"
+            android:layout_margin="@dimen/_5sdp"
+            android:maxLength="30"
+            android:inputType="textCapWords"
+            android:background="@drawable/edittext_background"
+            android:padding="@dimen/_8sdp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/errorfirst_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etmiddle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle name"
+            android:maxLength="30"
+            android:padding="@dimen/_8sdp"
+            android:inputType="textCapWords"
+            android:background="@drawable/edittext_background"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true" />
+    <TextView
+        android:id="@+id/errormiddle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etlast_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last name"
+            android:maxLength="30"
+            android:inputType="textCapWords"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edittext_background"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true" />
+    <TextView
+        android:id="@+id/errorlast_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#606060"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="normal"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Mobile number" />
+
+        <EditText
+            android:id="@+id/etmobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile no"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:layout_margin="@dimen/_5sdp"
+            android:maxLength="14"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edittext_background"
+            android:singleLine="true" />
+    <TextView
+        android:id="@+id/errormobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#606060"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="normal"
+            android:text="Email address" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@mail.com"
+            android:maxLength="30"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edittext_background"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true" />
+    <TextView
+        android:id="@+id/erroremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="normal"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edittext_background"
+            android:layout_margin="@dimen/_5sdp"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:singleLine="true" />
+    <TextView
+        android:id="@+id/errorpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_signup_condion_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="@dimen/_5ssp"
+        android:textColor="#808080"
+        android:textSize="@dimen/_11ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:textStyle="normal"
+        android:text="By submitting this form, you accept Dinaro’s Terms and Conditions and Privacy Policy." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_11ssp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="#808080"
+        android:padding="@dimen/_5sdp"
+        android:lineSpacingExtra="@dimen/_5ssp"
+        android:layout_margin="@dimen/_15sdp"
+        android:text="If you DO Not wish to receive marketing information about Dinaro’s products and special offers, please check this box."
+        />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signup"
+            android:text="Sign up"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/black"
+            />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
